@@ -29,7 +29,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA Healthcare Se
 
 WebUI.sendKeys(findTestObject('Object Repository/Page_CURA Healthcare Service/input_password'), Keys.chord(Keys.ENTER))
 
-WebUI.verifyElementPresent(findTestObject(null), 1)
+WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_username'), 'John Doe')
 
 WebUI.closeBrowser()
 
