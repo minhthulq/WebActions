@@ -17,6 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+import io.github.bonigarcia.wdm.WebDriverManager
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.chrome.ChromeDriver
+
+WebDriverManager.chromedriver().setup()
+WebDriver driver = new ChromeDriver()
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
