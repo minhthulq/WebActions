@@ -11,7 +11,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-
     - name: Install Google Chrome
       run: |
         choco install googlechrome --version=114.0.5735.199
@@ -20,7 +19,7 @@ jobs:
       - name: Download ChromeDriver
       run: |
         $chromeDriverVersion = "114.0.5735.199"
-        $chromeDriverUrl = "https://chromedriver.storage.googleapis.com/$chromeDriverVersion/chromedriver_win32.zip"
+        $chromeDriverUrl = "https://chromedriver.storage.googleapis.com/$chromeDriverVersion/chromedriver_win64.zip"
         Invoke-WebRequest -Uri $chromeDriverUrl -OutFile chromedriver.zip
         Expand-Archive -Path chromedriver.zip -DestinationPath $env:USERPROFILE\.wdm\chromedriver
       
