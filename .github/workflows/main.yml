@@ -14,7 +14,7 @@ jobs:
 
     - name: Set up Chrome
       run: |
-        choco install googlechrome --version=121.0.6167.86
+        choco install googlechrome --version=114.0.5735.199
       shell: powershell
       
     - name: Katalon Studio Github Action
