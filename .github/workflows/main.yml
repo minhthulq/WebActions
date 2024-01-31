@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Install Google Chrome
+    - name: Set up Chrome
       run: |
         choco install googlechrome --version=114.0.5735.199
       shell: powershell
