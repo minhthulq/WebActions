@@ -11,10 +11,9 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Set up Chrome
-      run: |
-        choco install googlechrome --version=116.0.5845.110
-      shell: powershell
+
+    - uses: browser-actions/setup-chrome@latest
+    - run: chrome --version
   
     - name: Katalon Studio Github Action
       uses: katalon-studio/katalon-studio-github-action@v2
