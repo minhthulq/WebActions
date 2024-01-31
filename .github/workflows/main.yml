@@ -12,11 +12,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       
-    - name: Set up Chrome
-      run: |
-        choco install googlechrome --version=114.0.5735.199
-      shell: powershell
-
       - name: Download ChromeDriver
       run: |
         $chromeDriverVersion = "114.0.5735.199"
