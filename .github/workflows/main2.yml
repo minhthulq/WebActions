@@ -13,4 +13,4 @@ jobs:
       uses: actions/checkout@v2
 
     - name: check dir
-      run: ls -l
+      run: ls -l /home/runner/.katalon/7.5.5/Katalon_Studio_Engine_Linux_64-7.5.5/configuration/1706695262935.log
